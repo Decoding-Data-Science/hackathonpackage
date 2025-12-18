@@ -6,12 +6,19 @@
     <title>Sponsor Decoding Data Science | Hackathon 2025</title>
     <meta name="description" content="Partner with the MENA region's largest AI & Data Science Community. Sponsorship packages for upcoming GenAI Hackathons.">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/dds_logo.jpg">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Custom Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -42,23 +49,30 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+        .gallery-img {
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <img class="h-12 w-auto rounded-full" src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/dds_logo.jpg" alt="Decoding Data Science Logo">
+                    <img class="h-12 w-auto rounded-full" src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/dds_logo.jpg" alt="DDS Logo">
                     <span class="font-bold text-xl tracking-tight text-slate-900">Decoding Data Science</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-slate-600 hover:text-dds-accent transition">About</a>
-                    <a href="#impact" class="text-slate-600 hover:text-dds-accent transition">Impact</a>
-                    <a href="#packages" class="text-slate-600 hover:text-dds-accent transition">Packages</a>
                     <a href="#history" class="text-slate-600 hover:text-dds-accent transition">History</a>
-                    <a href="#contact" class="px-5 py-2 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition shadow-lg">Partner With Us</a>
+                    <a href="#gallery" class="text-slate-600 hover:text-dds-accent transition">Gallery</a>
+                    <a href="#packages" class="text-slate-600 hover:text-dds-accent transition">Packages</a>
+                    <a href="mailto:connect@decodingdatascience.com?subject=Custom%20Hackathon%20Package" class="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg text-sm font-semibold">Customized Package</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none">
@@ -69,30 +83,32 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
             <a href="#about" class="block py-3 px-4 text-slate-700 hover:bg-slate-50">About</a>
+            <a href="#history" class="block py-3 px-4 text-slate-700 hover:bg-slate-50">History</a>
             <a href="#packages" class="block py-3 px-4 text-slate-700 hover:bg-slate-50">Packages</a>
-            <a href="#contact" class="block py-3 px-4 text-dds-accent font-semibold">Partner With Us</a>
+            <a href="mailto:connect@decodingdatascience.com" class="block py-3 px-4 text-dds-accent font-semibold">Customized Package</a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero-bg relative pt-32 pb-20 lg:pt-48 lg:pb-32 text-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8 backdrop-blur-sm">
                 <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                <span class="text-sm font-medium text-slate-200">Next Event: GenAI Agents Hackathon 2025</span>
+                <span class="text-sm font-medium text-slate-200">2025: Quarterly AI Challenges & Enterprise Partnering</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                Shape the Future of <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Generative AI</span>
+                Empower Your AI Ecosystem <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Collaborate with Experts</span>
             </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-300">
-                Partner with MENA's largest AI community. Access top talent, showcase your tech stack, and drive innovation with 180,000+ professionals.
+            <p class="mt-4 max-w-3xl mx-auto text-xl text-slate-300 leading-relaxed">
+                Join our 180,000+ member community. We host <strong>Quarterly General Hackathons</strong> for broad innovation and offer <strong>Full-Service Organization & Marketing</strong> for your bespoke company challenges.
             </p>
-            <div class="mt-10 flex justify-center gap-4">
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#packages" class="px-8 py-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg transition shadow-blue-500/25 shadow-xl">
-                    View Sponsorship Packages
+                    View Standard Packages
                 </a>
-                <a href="https://linktr.ee/decodingdatascience" target="_blank" class="px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-lg transition backdrop-blur-sm">
-                    Community Profile
+                <a href="mailto:connect@decodingdatascience.com?subject=Customized%20Hackathon%20Inquiry" class="px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-lg transition backdrop-blur-sm">
+                    Custom Organization Request
                 </a>
             </div>
         </div>
@@ -102,231 +118,233 @@
         </div>
     </header>
 
-    <section id="impact" class="py-20 bg-white">
+    <!-- Services Overview -->
+    <section id="about" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Unrivaled Community Reach</h2>
-                <p class="mt-4 text-lg text-slate-600">How we will amplify your brand across the ecosystem.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Newsletter Blast</h3>
-                    <p class="text-slate-600">
-                        Dedicated feature in our weekly newsletter sent to <span class="font-bold text-slate-900">60,000+ subscribers</span>. We share your API docs, job openings, and challenge statements directly to inboxes.
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6 italic uppercase tracking-tight">The Roadmap: Quarterly Innovation</h2>
+                    <p class="text-slate-600 text-lg mb-4">
+                        We plan a general community hackathon and challenge <strong>every quarter</strong>. These are open platforms for companies to collaborate, test their APIs, and discover emerging talent.
                     </p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Social Media Dominance</h3>
-                    <p class="text-slate-600">
-                        Strategic posts across LinkedIn (100k+ followers), Twitter/X, and Instagram. Includes video shoutouts, "Tool of the Week" features, and winner announcements.
+                    <p class="text-slate-600 text-lg mb-6">
+                        Looking for something more exclusive? We also help enterprise partners <strong>organize, manage, and market</strong> their own private or public branded hackathons from start to finish.
                     </p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-users-viewfinder"></i>
+                    <div class="flex gap-4">
+                        <div class="flex-1 p-4 bg-slate-50 rounded-xl border-l-4 border-blue-500">
+                            <span class="block font-bold text-slate-900">4+ Annual Challenges</span>
+                            <span class="text-sm text-slate-500">Regular community growth</span>
+                        </div>
+                        <div class="flex-1 p-4 bg-slate-50 rounded-xl border-l-4 border-emerald-500">
+                            <span class="block font-bold text-slate-900">End-to-End Marketing</span>
+                            <span class="text-sm text-slate-500">Full lifecycle management</span>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Community Engagement</h3>
-                    <p class="text-slate-600">
-                        Live AMA (Ask Me Anything) sessions on our Discord and Nas.io community (12.7k+ members). Direct mentorship channels where your engineers can guide participants.
-                    </p>
                 </div>
-            </div>
-
-            <div class="mt-16 bg-slate-900 rounded-3xl p-10 flex flex-wrap justify-between items-center text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="text-4xl font-bold text-white mb-1">180K+</div>
-                    <div class="text-slate-400">Total Community</div>
-                </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="text-4xl font-bold text-white mb-1">100+</div>
-                    <div class="text-slate-400">Past Events</div>
-                </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="text-4xl font-bold text-white mb-1">50+</div>
-                    <div class="text-slate-400">Countries Represented</div>
-                </div>
-                <div class="w-full md:w-1/4 p-4">
-                    <div class="text-4xl font-bold text-white mb-1">100%</div>
-                    <div class="text-slate-400">Engaged Talent</div>
+                <div class="relative group">
+                    <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic1.jpg" alt="Hackathon Preview" class="rounded-2xl shadow-2xl gallery-img" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800'">
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl hidden lg:block shadow-xl">
+                        <p class="font-bold text-2xl leading-none">180K+</p>
+                        <p class="text-sm opacity-80 uppercase tracking-widest mt-1">Followers</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Past Hackathons Track Record -->
     <section id="history" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-                <div class="max-w-2xl">
-                    <span class="text-blue-600 font-bold tracking-wide uppercase text-sm">Our Track Record</span>
-                    <h2 class="text-3xl font-bold text-slate-900 mt-2">History of Innovation</h2>
-                    <p class="mt-4 text-slate-600">We don't just host events; we solve real-world problems. See what our community has built.</p>
-                </div>
-                <a href="https://nas.io/artificialintelligence/products?product=CHALLENGE&tab=PAST" target="_blank" class="hidden md:inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition mt-4 md:mt-0">
-                    View All Challenges <i class="fa-solid fa-arrow-right ml-2"></i>
-                </a>
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold tracking-wide uppercase text-sm">Case Study</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2 italic">Rev Up Your Workflow: AI Agent Hackathon</h2>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Collaboration with Airia and Williams Racing at Yas Creative Hub, Abu Dhabi.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8">
-                <div class="bg-white border-2 border-blue-500 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition md:col-span-2 lg:col-span-1">
-                    <div class="h-48 bg-slate-900 relative flex items-center justify-center p-8 overflow-hidden">
-                        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-                        <div class="relative z-10 text-center">
-                            <h3 class="text-2xl font-black text-white italic tracking-tighter italic uppercase leading-none">Rev Up Your Workflow<br><span class="text-blue-400 text-lg font-bold">AI Agent Hackathon</span></h3>
-                            <p class="text-slate-400 text-xs mt-2 font-mono">Yas Creative Hub, Abu Dhabi</p>
+            <!-- Featured Airia Event -->
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 lg:p-12">
+                        <div class="flex items-center gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full">AIRIA COLLABORATION</span>
+                            <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-bold rounded-full">ABU DHABI</span>
                         </div>
-                        <div class="absolute bottom-4 right-4 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded">AIRIA × WILLIAMS RACING</div>
+                        <h3 class="text-3xl font-black text-slate-900 mb-6 italic">Innovation in the Fast Lane</h3>
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            A high-speed exploration building autonomous AI agents. Featuring a fireside chat with <strong>James Vowles</strong> (Team Principal, Williams Racing) and <strong>Alex Albon</strong>.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 text-slate-700 font-medium italic"><i class="fa-solid fa-flag-checkered text-blue-600"></i> Built championship-level agents in 2 hours</li>
+                            <li class="flex items-center gap-3 text-slate-700 font-medium italic"><i class="fa-solid fa-trophy text-blue-600"></i> 7,000 AED Prize Pool + Token Credits</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="text-center bg-slate-50 p-3 rounded-lg flex-1"><p class="text-xs text-slate-500 uppercase font-bold">1st Place</p><p class="font-bold text-slate-900">4,000 AED</p></div>
+                            <div class="text-center bg-slate-50 p-3 rounded-lg flex-1"><p class="text-xs text-slate-500 uppercase font-bold">2nd Place</p><p class="font-bold text-slate-900">2,000 AED</p></div>
+                            <div class="text-center bg-slate-50 p-3 rounded-lg flex-1"><p class="text-xs text-slate-500 uppercase font-bold">3rd Place</p><p class="font-bold text-slate-900">1,000 AED</p></div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <div class="text-xs font-bold text-blue-600 uppercase mb-1">Autonomous AI Agents • No-Code</div>
-                                <h4 class="font-bold text-slate-900">Featuring James Vowles & Alex Albon</h4>
-                            </div>
-                            <span class="bg-slate-100 text-slate-800 text-[10px] font-bold px-2 py-1 rounded">DEC 2025</span>
-                        </div>
-                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">A high-speed exploration of agentic ecosystems. Participants built championship-level AI agents on the Airia platform to streamline enterprise workflows.</p>
-                        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
-                            <div class="flex items-center text-sm text-slate-500">
-                                <i class="fa-solid fa-trophy mr-2 text-yellow-500"></i> 7,000 AED Prizes
-                            </div>
-                            <div class="flex items-center text-sm text-slate-500">
-                                <i class="fa-solid fa-user-check mr-2 text-blue-400"></i> 75 Elite Builders
+                    <div class="bg-slate-900 relative min-h-[400px]">
+                        <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic2.jpg" alt="Airia Hackathon" class="w-full h-full object-cover opacity-80" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-6 glass-card rounded-2xl max-w-xs">
+                                <p class="text-slate-900 font-bold mb-2">"High speed exploration in the fast lane"</p>
+                                <div class="flex justify-center gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-r from-slate-800 to-slate-900 flex items-center justify-center p-6 text-center">
-                        <h3 class="text-2xl font-bold text-white">AAICO Voice Analysis</h3>
+            <!-- Other Past Challenges Grid -->
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 italic uppercase">More Success Stories</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- AAICO -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition border border-slate-100">
+                    <div class="h-40 bg-slate-900 flex items-center justify-center p-6 text-center">
+                        <h4 class="text-xl font-bold text-white uppercase italic">AAICO Voice Analysis</h4>
                     </div>
                     <div class="p-6">
                         <div class="text-xs font-bold text-blue-600 uppercase mb-2">Voice AI • Python</div>
-                        <p class="text-slate-600 mb-4 text-sm">A challenge to detect specific commands in audio streams. Participants built models focusing on latency and accuracy for real-time processing.</p>
-                        <div class="flex items-center text-sm text-slate-500">
+                        <p class="text-slate-600 text-sm mb-4">Detection of specific commands in real-time audio streams. Focus on latency and accuracy.</p>
+                        <div class="flex items-center text-sm font-bold text-slate-900">
                             <i class="fa-solid fa-trophy mr-2 text-yellow-500"></i> $5,450 Prize Pool
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-r from-indigo-800 to-blue-900 flex items-center justify-center p-6 text-center">
-                        <h3 class="text-2xl font-bold text-white">Facial Emotion Detection</h3>
+                <!-- Facial Emotion -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition border border-slate-100">
+                    <div class="h-40 bg-indigo-900 flex items-center justify-center p-6 text-center">
+                        <h4 class="text-xl font-bold text-white uppercase italic">Facial Emotion Detection</h4>
                     </div>
                     <div class="p-6">
                         <div class="text-xs font-bold text-blue-600 uppercase mb-2">Computer Vision</div>
-                        <p class="text-slate-600 mb-4 text-sm">Participants created models to test 5-10 second videos for emotion detection, solving problems for customer sentiment analysis.</p>
-                        <div class="flex items-center text-sm text-slate-500">
-                            <i class="fa-solid fa-code-branch mr-2 text-slate-400"></i> Open Source
+                        <p class="text-slate-600 text-sm mb-4">Sentiment analysis models for 5-10s video clips, solving customer insight challenges.</p>
+                        <div class="flex items-center text-sm font-bold text-slate-900">
+                            <i class="fa-solid fa-code-branch mr-2 text-indigo-400"></i> Open Source Models
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition">
-                    <div class="h-48 bg-gradient-to-r from-emerald-800 to-teal-900 flex items-center justify-center p-6 text-center">
-                        <h3 class="text-2xl font-bold text-white">GenAI & LLM Challenges</h3>
+                <!-- GenAI -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition border border-slate-100">
+                    <div class="h-40 bg-emerald-900 flex items-center justify-center p-6 text-center">
+                        <h4 class="text-xl font-bold text-white uppercase italic">GenAI & LLM Challenges</h4>
                     </div>
                     <div class="p-6">
-                        <div class="text-xs font-bold text-blue-600 uppercase mb-2">Generative AI • RAG</div>
-                        <p class="text-slate-600 mb-4 text-sm">Ongoing challenges focused on Agentic AI, LangChain, and RAG pipelines. Helping professionals upscale from theory to deployment.</p>
-                        <div class="flex items-center text-sm text-slate-500">
-                            <i class="fa-solid fa-users mr-2 text-slate-400"></i> 100+ Submissions
+                        <div class="text-xs font-bold text-blue-600 uppercase mb-2">Agentic AI • RAG</div>
+                        <p class="text-slate-600 text-sm mb-4">Continuous innovation in LangChain pipelines and autonomous agents for community growth.</p>
+                        <div class="flex items-center text-sm font-bold text-slate-900">
+                            <i class="fa-solid fa-users mr-2 text-emerald-500"></i> 100+ Submissions
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="mt-8 text-center md:hidden">
-                <a href="https://nas.io/artificialintelligence/products?product=CHALLENGE&tab=PAST" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800 transition">
-                    View All Challenges <i class="fa-solid fa-arrow-right ml-2"></i>
-                </a>
             </div>
         </div>
     </section>
 
-    <section id="packages" class="py-20 bg-white relative">
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-slate-900">Sponsorship Packages</h2>
-                <p class="mt-4 text-slate-600">Choose the tier that fits your hiring and branding goals.</p>
+                <h2 class="text-3xl font-bold text-slate-900 italic uppercase">Hackathon Gallery</h2>
+                <p class="mt-4 text-slate-600">Visual moments from our previous challenges.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="h-64 rounded-xl overflow-hidden bg-slate-200">
+                    <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic1.jpg" alt="Hackathon 1" class="w-full h-full object-cover gallery-img" onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400'">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden bg-slate-200">
+                    <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic2.jpg" alt="Hackathon 2" class="w-full h-full object-cover gallery-img" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400'">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden bg-slate-200">
+                    <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic3.jpg" alt="Hackathon 3" class="w-full h-full object-cover gallery-img" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400'">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden bg-slate-200">
+                    <img src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/pic4.jpg" alt="Hackathon 4" class="w-full h-full object-cover gallery-img" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=400'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Packages -->
+    <section id="packages" class="py-20 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 italic uppercase">Sponsorship Tiers</h2>
+                <p class="mt-4 text-slate-600">Standard community packages or contact us for bespoke enterprise solutions.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <div class="border border-slate-200 rounded-2xl p-8 hover:border-orange-500/50 transition bg-white relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Bronze -->
+                <div class="bg-white border border-slate-200 rounded-2xl p-8 hover:border-orange-500/50 transition relative flex flex-col">
                     <h3 class="text-2xl font-bold text-slate-900">Bronze</h3>
                     <div class="text-4xl font-bold mt-4 mb-2 text-dds-bronze">$2,500</div>
-                    <p class="text-sm text-slate-500 mb-6">Brand Visibility</p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Logo on Website & Event Page</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Social Media Shoutouts (1 post)</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Mention in Newsletter Footer</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Access to Winning Projects</span></li>
+                    <p class="text-sm text-slate-500 mb-6">Visibility Package</p>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start text-sm text-slate-600"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Logo on Website & Banners</li>
+                        <li class="flex items-start text-sm text-slate-600"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Social Media Shoutout</li>
+                        <li class="flex items-start text-sm text-slate-600"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> Newsletter Footer Mention</li>
                     </ul>
-                    <a href="#contact" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold text-center rounded-lg hover:bg-slate-200 transition">Select Bronze</a>
+                    <a href="mailto:connect@decodingdatascience.com?subject=Bronze%20Package%20Interest" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold text-center rounded-lg hover:bg-slate-200 transition italic">Select Bronze</a>
                 </div>
 
-                <div class="border-2 border-yellow-400 rounded-2xl p-8 shadow-2xl relative bg-white transform md:-translate-y-4">
+                <!-- Gold (Featured) -->
+                <div class="bg-white border-2 border-yellow-400 rounded-2xl p-8 shadow-2xl relative transform md:-translate-y-4 flex flex-col">
                     <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
                     <h3 class="text-2xl font-bold text-slate-900">Gold</h3>
                     <div class="text-5xl font-bold mt-4 mb-2 text-dds-gold">$7,000</div>
                     <p class="text-sm text-slate-500 mb-6">Full Ecosystem Access</p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-800 text-sm font-semibold">Keynote Speaking Slot (15 mins)</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-800 text-sm font-semibold">Judge Panel Seat</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Full Participant Database Access</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Custom Challenge Statement</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Dedicated Newsletter Blast</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Logo on T-Shirts/Swag</span></li>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start text-sm text-slate-800 font-semibold"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> Keynote Speaking Slot (15 mins)</li>
+                        <li class="flex items-start text-sm text-slate-800 font-semibold"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> Judge Panel Seat</li>
+                        <li class="flex items-start text-sm text-slate-600"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> Full Talent Database Access</li>
+                        <li class="flex items-start text-sm text-slate-600"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-3"></i> Custom Challenge Statement</li>
                     </ul>
-                    <a href="#contact" class="block w-full py-4 px-4 bg-yellow-400 text-yellow-900 font-bold text-center rounded-lg hover:bg-yellow-300 transition shadow-lg">Become a Gold Sponsor</a>
+                    <a href="mailto:connect@decodingdatascience.com?subject=Gold%20Package%20Interest" class="block w-full py-4 px-4 bg-yellow-400 text-yellow-900 font-bold text-center rounded-lg hover:bg-yellow-300 transition shadow-lg italic text-sm">Become a Gold Sponsor</a>
                 </div>
 
-                <div class="border border-slate-200 rounded-2xl p-8 hover:border-slate-400 transition bg-white relative">
-                    <h3 class="text-2xl font-bold text-slate-900">Silver</h3>
-                    <div class="text-4xl font-bold mt-4 mb-2 text-dds-silver">$4,000</div>
-                    <p class="text-sm text-slate-500 mb-6">Talent & Workshops</p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Technical Workshop (30 mins)</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Logo on Website & Streams</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Top 20 Talent Profiles</span></li>
-                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i> <span class="text-slate-600 text-sm">Social Media Campaign</span></li>
+                <!-- Enterprise (Custom) -->
+                <div class="bg-blue-600 border border-blue-500 rounded-2xl p-8 text-white relative flex flex-col shadow-xl">
+                    <h3 class="text-2xl font-bold">Enterprise</h3>
+                    <div class="text-3xl font-bold mt-4 mb-2 uppercase tracking-tighter">Bespoke Organization</div>
+                    <p class="text-sm text-blue-100 mb-6 font-medium">Fully Managed Hackathons</p>
+                    <ul class="space-y-4 mb-8 flex-grow">
+                        <li class="flex items-start text-sm text-white font-medium italic"><i class="fa-solid fa-gear text-white mt-1 mr-3"></i> Custom Org Management</li>
+                        <li class="flex items-start text-sm text-white font-medium italic"><i class="fa-solid fa-bullhorn text-white mt-1 mr-3"></i> Focused Marketing Campaign</li>
+                        <li class="flex items-start text-sm text-white font-medium italic"><i class="fa-solid fa-location-dot text-white mt-1 mr-3"></i> Venue & Logistics Support</li>
                     </ul>
-                    <a href="#contact" class="block w-full py-3 px-4 bg-slate-100 text-slate-700 font-bold text-center rounded-lg hover:bg-slate-200 transition">Select Silver</a>
+                    <a href="mailto:connect@decodingdatascience.com?subject=Custom%20Enterprise%20Hackathon%20Package" class="block w-full py-3 px-4 bg-white text-blue-700 font-bold text-center rounded-lg hover:bg-blue-50 transition italic shadow-md">Request Quote</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer / Contact -->
     <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                 <div>
                     <div class="flex items-center gap-3 mb-6">
                          <img class="h-10 w-auto rounded-full bg-white p-0.5" src="https://raw.githubusercontent.com/Decoding-Data-Science/airesidency/main/dds_logo.jpg" alt="DDS Logo">
-                         <span class="text-2xl font-bold">Decoding Data Science</span>
+                         <span class="text-2xl font-bold tracking-tighter uppercase italic">Decoding Data Science</span>
                     </div>
-                    <p class="text-slate-400 text-lg mb-8 max-w-md">
-                        Ready to connect with the best minds in AI? Let's build something incredible together.
+                    <p class="text-slate-400 text-lg mb-8 max-w-md italic">
+                        MENA's Largest AI Community. Partnering with elite enterprises to drive real-world AI impact every quarter.
                     </p>
                     <div class="flex space-x-6">
                         <a href="https://www.linkedin.com/company/decodingdatascience" target="_blank" class="text-slate-400 hover:text-white transition text-2xl"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.youtube.com/@decodingdatascience" target="_blank" class="text-slate-400 hover:text-red-500 transition text-2xl"><i class="fa-brands fa-youtube"></i></a>
                         <a href="https://twitter.com/decodingdatascience" target="_blank" class="text-slate-400 hover:text-blue-400 transition text-2xl"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/decodingdatascience" target="_blank" class="text-slate-400 hover:text-pink-500 transition text-2xl"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-6">Contact Sponsorship Team</h3>
-                    <ul class="space-y-4">
+                    <h3 class="text-xl font-bold mb-6 italic uppercase tracking-widest">Connect with Us</h3>
+                    <ul class="space-y-4 mb-8">
                         <li class="flex items-center text-slate-300">
                             <i class="fa-solid fa-envelope w-8 text-blue-400"></i>
                             <a href="mailto:connect@decodingdatascience.com" class="hover:text-white transition">connect@decodingdatascience.com</a>
@@ -335,17 +353,13 @@
                             <i class="fa-solid fa-location-dot w-8 text-blue-400"></i>
                             <span>Dubai Internet City, UAE</span>
                         </li>
-                        <li class="flex items-center text-slate-300">
-                            <i class="fa-solid fa-link w-8 text-blue-400"></i>
-                            <a href="https://linktr.ee/decodingdatascience" target="_blank" class="hover:text-white transition">More Links (Linktree)</a>
-                        </li>
                     </ul>
-                    <a href="mailto:connect@decodingdatascience.com?subject=Sponsorship%20Inquiry" class="mt-8 block w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold text-center rounded-lg transition">
-                        Request Pitch Deck
+                    <a href="mailto:connect@decodingdatascience.com?subject=Sponsorship%20Inquiry" class="block w-full py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-center rounded-lg transition italic uppercase tracking-tighter">
+                        Inquire for Customized Package
                     </a>
                 </div>
             </div>
-            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm italic">
                 &copy; 2025 Decoding Data Science. All rights reserved.
             </div>
         </div>
